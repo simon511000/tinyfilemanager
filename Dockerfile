@@ -23,4 +23,6 @@ WORKDIR /var/www/html
 
 COPY tinyfilemanager.php index.php
 
+COPY assets /var/www/html/assets
+
 CMD ["sh", "-c", "php -S 0.0.0.0:80"]
